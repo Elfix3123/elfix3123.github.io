@@ -202,11 +202,11 @@ main {
 
 .show .mesprojets {
 	display: flex;
-	flex-flow: row wrap;
 }
 
 .mesprojets{
 	display: none;
+	flex-flow: row wrap;
 }
 
 .mesprojets .SAEmenu {
@@ -415,3 +415,34 @@ main {
 	max-width: 32px;
 }
 
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+	main {
+		width: 95%;
+	}
+
+	#presentationcontent img {
+		display: none;
+	}
+
+	.mesprojets{
+		flex-flow: column wrap;
+	}
+
+	.mesprojets .SAEmenu {
+		width: 100%;
+	}
+
+	#cvcontent {
+		flex-flow: column wrap;
+		gap: 16px;
+	}
+
+	#cv #cvcontent div {
+		width: 100%;
+	}
+
+	#cv #cvcontent .bio {
+		width: 100%;
+	}
+}
