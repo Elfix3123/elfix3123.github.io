@@ -213,7 +213,7 @@ main {
 	width: 25%;
 	text-align: center;
 	color: #303030;
-	font-size: 20px;
+	font-size: 22px;
 	height: 5em;
 	display: flex;
 	align-items: center;
@@ -222,6 +222,7 @@ main {
 
 .mesprojets .SAEmenu a {
 	background-color: #d0d0d0;
+	padding: 4px;
 }
 
 #SAE1012menu {
@@ -267,7 +268,7 @@ main {
 }
 
 .SAE .SAEtext p {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .SAE .SAEcontent {
@@ -332,7 +333,7 @@ main {
 
 #cv #cvcontent .bio {
 	width: 50%;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 #cv #cvcontent .bio * {
@@ -378,7 +379,7 @@ main {
 #cv #cvcontent .line {
 	display: inline;
 	position: absolute;
-	font-size: 20px;
+	font-size: 22px;
 	width: 90%;
 	top: 32px;
 	left: 48px;
