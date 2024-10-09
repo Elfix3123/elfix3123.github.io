@@ -5,6 +5,7 @@ Couleurs :
 - Gris : #d0d0d0
 - Gris foncé : #606060
 - Noir : #303030
+- Vert immonde : #307270
 */
 
 @font-face {
@@ -28,9 +29,7 @@ html {
 }
 
 body {
-	background: #f0f0f0 url('img/wallpapers/bg0.jpg') no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
+	background: #f7edde;
 }
 
 main {
@@ -62,13 +61,6 @@ main {
 }
 
 .contourmoche {
-	border-top: 2px solid #e0e0e0;
-	border-left: 2px solid #e0e0e0;
-	border-right: 2px solid #606060;
-	border-bottom: 2px solid #606060;
-}
-
-.contourmochetexte {
 	border-top: 2px solid #e0e0e0;
 	border-left: 2px solid #e0e0e0;
 	border-right: 2px solid #606060;
@@ -226,24 +218,25 @@ main {
 }
 
 #SAE1012menu {
-	background-image: url('img/SAE1.0102.png');
+	background-image: url('img/SAE1012.png');
 	background-size: 100%;
 }
 
 #SAE203menu {
-	background-image: url('img/SAE2.03.png');
+	background-image: url('img/SAE203.png');
 	background-size: 100%;
 }
 
 #SAE204menu {
-	background-image: url('img/SAE2.04.png');
+	background-image: url('img/SAE204.png');
 	background-size: 100%;
 	background-position: bottom;
 }
 
 
-#SAES01256menu *{
-	cursor: not-allowed;
+#SAE201256menu {
+	background-image: url('img/SAE201256.png');
+	background-size: 100%;
 }
 
 .SAEmenu div {
@@ -281,18 +274,23 @@ main {
 }
 
 #SAE1012 .SAEimg {
-	background-image: url(img/SAE1.0102.png);
+	background-image: url(img/SAE1012.png);
 	background-size: 100%;
 }
 
 #SAE203 .SAEimg {
-	background-image: url(img/SAE2.03.png);
+	background-image: url(img/SAE203.png);
 	background-size: 100%;
 }
 
 #SAE204 .SAEimg {
-	background-image: url(img/SAE2.04.png);
+	background-image: url(img/SAE204.png);
 	background-position: bottom;
+	background-size: 100%;
+}
+
+#SAE201256 .SAEimg {
+	background-image: url(img/SAE201256.png);
 	background-size: 100%;
 }
 
