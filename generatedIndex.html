@@ -5,12 +5,12 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Felix Martins</title>
+	<title>Portfolio de Felix Martins</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
 	<header id="header">
-		<span id="topname">Felix Martins</span>
+		<span id="topname">Portfolio de Felix Martins</span>
 		<a href="javascript:setFullScreen()" class="bouton border"><img src="img/header-squares.png" alt="placeholder"></a><a href="javascript:closeWindow()" class="bouton border"><img src="img/header-x.png" alt="placeholder"></a>
 	</header>
 
@@ -29,15 +29,15 @@
 						<li class="border">Futur ingénieur réseau</li>
 					</ul>
 				</div>
-				<img src="/img/me.jpg" alt="Photo de Felix Martins">
+				<img src="/img/me.jpeg" alt="Photo de Felix Martins">
 			</div>
 		</div>
-		<div id="projetspro" class="block border show">
+		<div id="mesprojets" class="block border show">
 			<h1>
-				<a href="javascript:showBloc('projetspro')">Projets professionnels</a>
-				<a href="javascript:hideBloc('projetspro')" class="bouton border"><img src="img/header-minus.png" alt="placeholder"></a>
+				<a href="javascript:showBloc('mesprojets')">Mes projets</a>
+				<a href="javascript:hideBloc('mesprojets')" class="bouton border"><img src="img/header-minus.png" alt="placeholder"></a>
 			</h1>
-			<div class="projetspro">
+			<div class="mesprojets">
 				<div class="SAEmenu" id="SAE1012menu">
 					<a class="border" href="javascript:displayProjet('SAE1012')">Implémentation d'un besoin client et comparaison d'approches algorithmiques</a>
 				</div>
@@ -67,6 +67,7 @@
 						<span class="border SAEmoodle" title="Charge totale du projet"><img src="img/clock.png" alt="Horloge"><span>40 heures/homme</span></span>
 						<span class="border SAEmoodle" title="Technologies utilisées"><img src="img/java.png" alt="Java"></span>
 					</div>
+					<p>
 						<p>
 							Ce projet concernait dans notre cas la classification de dépêches en plusieurs catégories (sport,
 							économie, santé…) en fonction des mots qu'elles contenaient. Nous avons dû pour cela créer
@@ -90,6 +91,7 @@
 							k plus proches voisins à la place des score pour trouver les dépêches partageant le plus de
 							mots en commun. Nous n'avons pas réussi à complètement implémenter ces extensions.
 						</p>
+					</p>
 				</div>
 				<div class="SAEimg"></div>
 			</div>
@@ -192,39 +194,31 @@
 			<div id="cvcontent" class="show">
 				<div class="timeline">
 					<div class="date">
-						<div class="circle">2024</div>
-						<div class="line">Obtention du Baccalauréat mention très bien <br> Entrée à l'<a href="https://iut2.univ-grenoble-alpes.fr/">IUT2 UGA</a> pour un BUT informatique</div>
-					</div>
-					<div class="date">
-						<div class="circle">2023</div>
-						<div class="line">Obtention du brevet mention très bien <br> Entrée au lycée <a href="https://ferdinand-buisson.ent.auvergnerhonealpes.fr/">Ferdinand Buisson</a>, section scientifique</div>
-					</div>
-					<div class="date">
-						<div class="circle">2020</div>
+						<div class="circle">2016</div>
 						<div class="line">Entrée au collège Le Vergeron</div>
 					</div>
 					<div class="date">
-						<div class="circle">2016</div>
+						<div class="circle">2020</div>
+						<div class="line">Obtention du brevet mention très bien <br> Entrée au lycée <a href="https://ferdinand-buisson.ent.auvergnerhonealpes.fr/">Ferdinand Buisson</a>, section scientifique</div>
+					</div>
+					<div class="date">
+						<div class="circle">2023</div>
+						<div class="line">Obtention du Baccalauréat mention très bien <br> Entrée à l'<a href="https://iut2.univ-grenoble-alpes.fr/">IUT2 UGA</a> pour un BUT informatique</div>
+					</div>
+					<div class="date">
+						<div class="circle">2024</div>
 					</div>
 				</div>
 				<div class="moodles">
-					<div>
-						<span class="border moodle" title="Maitrîse du français"><img src="img/fr.png" alt="Drapeau français"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse de l'anglais"><img src="img/en.png" alt="Drapeau anglais"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse de l'espagnol"><img src="img/es.png" alt="Drapeau espagnol"><span class="progress">▓▓▓▓▓▓▓</span></span>
-					</div>
-					<div>
-						<span class="border moodle" title="Maitrîse de PSQL"><img src="img/psql.png" alt="Logo PSQL"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse de Java"><img src="img/java.png" alt="Logo Java"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse du C++"><img src="img/cpp.png" alt="Logo C++"><span class="progress">▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse de HTML/CSS"><img src="img/html.png" alt="Logo HTML"><span class="progress">▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse de R"><img src="img/r.png" alt="Logo R"><span class="progress">▓▓▓▓</span></span>
-					</div>
-					<div>
-						<span class="border moodle" title="Maitrîse de Photoshop"><img src="img/photoshop.png" alt="Logo Photoshop"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse d'Illustrator"><img src="img/illustrator.png" alt="Logo Illustrator"><span class="progress">▓▓▓▓▓▓▓▓▓▓</span></span>
-						<span class="border moodle" title="Maitrîse de la suite Office"><img src="img/libreoffice.png" alt="Logo Libre Office"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
-					</div>
+					<span class="border moodle" title="Maitrîse du français"><img src="img/fr.png" alt="Drapeau français"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de l'anglais"><img src="img/en.png" alt="Drapeau anglais"><span class="progress">▓▓▓▓▓▓▓▓▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de l'espagnol"><img src="img/es.png" alt="Drapeau espagnol"><span class="progress">▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de Python"><img src="img/py.png" alt="Logo Python"><span class="progress">▓▓▓▓▓▓▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de Java"><img src="img/java.png" alt="Logo Java"><span class="progress">▓▓▓▓▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de PSQL"><img src="img/psql.png" alt="Logo PSQL"><span class="progress">▓▓▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de HTML/CSS"><img src="img/html.png" alt="Logo HTML"><span class="progress">▓▓▓▓</span></span>
+					<span class="border moodle" title="Maitrîse de R"><img src="img/r.png" alt="Logo R"><span class="progress">▓▓</span></span>
+
 				</div>
 				<div class="bio">
 					<h2>Qui suis-je ?</h2>
@@ -241,7 +235,7 @@
 						de nouvelles technologies et de m'adapter à de nouveaux environnements.
 					</p>
 					<p>
-						En dehors de mes études, je suis passionné de jeux vidéo, mais également de musique que je pratique depuis 10 ans,
+						En dehors de mes études, je suis évidemment passionné de jeux vidéo, mais également de musique que je pratique depuis 10 ans,
                         personnellement et au sein d'un ensemble de percussions dont je fais partie. J'exprime également ma créativité à travers
                         la photographie et la broderie.
 					</p>
@@ -253,7 +247,7 @@
 	<footer id="navbar" class="border">
 		<div id="navbarnav">
 			<a href="#presentation" title="Presentation"><img class="border bouton" src="img/people.png" alt="Icone de personnes"></a>
-			<a href="#projetspro" title="Projets professionnels"><img class="border bouton" src="img/explorer.png" alt="Icone de dossiers"></a>
+			<a href="#mesprojets" title="Mes projets"><img class="border bouton" src="img/explorer.png" alt="Icone de dossiers"></a>
 			<a href="#cv" title="Qui suis-je ?"><img class="border bouton" src="img/cv.png" alt="Icone de feuille"></a>
 		</div>
 		<div id="navbarmoodles">
