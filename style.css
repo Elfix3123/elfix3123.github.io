@@ -42,21 +42,21 @@ main {
   flex-grow: 1;
 }
 
-.border {
+.border, #presentationcontent img, .button {
   border-top: 2px solid #e0e0e0;
   border-left: 2px solid #e0e0e0;
   border-right: 2px solid #606060;
   border-bottom: 2px solid #606060;
 }
 
-.negaborder, .bouton:hover {
+.negaborder, .button:hover {
   border-top: 2px solid #606060;
   border-left: 2px solid #606060;
   border-right: 2px solid #e0e0e0;
   border-bottom: 2px solid #e0e0e0;
 }
 
-.bouton {
+.button {
   background-color: #d0d0d0;
   display: inline-block;
   font-size: 0;
@@ -135,33 +135,33 @@ main {
 #presentationcontent.show {
   display: flex;
 }
-#presentationcontent #presentationcontentaside {
+#presentationcontent img {
+  max-width: 300px;
+}
+#presentationcontent div {
   display: flex;
   justify-content: space-between;
   color: #303030;
   flex-flow: column nowrap;
   gap: 16px;
 }
-#presentationcontent #presentationcontentaside h2 {
+#presentationcontent div h2 {
   font-size: 64px;
 }
-#presentationcontent #presentationcontentaside ul {
+#presentationcontent div ul {
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
 }
-#presentationcontent #presentationcontentaside ul li {
+#presentationcontent div ul li {
   font-size: 24px;
   padding: 8px;
-}
-
-.show .projetspro {
-  display: flex;
 }
 
 .projetspro {
   display: none;
   flex-flow: row wrap;
+  display: flex;
 }
 .projetspro .SAEmenu {
   width: 25%;

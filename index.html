@@ -11,17 +11,17 @@
 <body>
 	<header id="header">
 		<span id="topname">Felix Martins</span>
-		<a href="javascript:setFullScreen()" class="bouton border"><img src="img/header-squares.png" alt="placeholder"></a><a href="javascript:closeWindow()" class="bouton border"><img src="img/header-x.png" alt="placeholder"></a>
+		<a href="javascript:setFullScreen()" class="button"><img src="img/header-squares.png" alt="placeholder"></a><a href="javascript:closeWindow()" class="button"><img src="img/header-x.png" alt="placeholder"></a>
 	</header>
 
 	<main>
 		<div id="presentation" class="block border">
 			<h1>
 				<a href="javascript:showBloc('presentationcontent')"></a>
-				<a href="javascript:hideBloc('presentationcontent')" class="bouton border"><img src="img/header-minus.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('presentationcontent')" class="button"><img src="img/header-minus.png" alt="placeholder"></a>
 			</h1>
 			<div class="show" id="presentationcontent">
-				<div id="presentationcontentaside" class="show">
+				<div class="show">
 					<h2>Felix Martins</h2>
 					<ul>
 						<li class="border">Etudiant en BUT2 informatique à l'UGA</li>
@@ -35,27 +35,28 @@
 		<div id="projetspro" class="block border show">
 			<h1>
 				<a href="javascript:showBloc('projetspro')">Projets professionnels</a>
-				<a href="javascript:hideBloc('projetspro')" class="bouton border"><img src="img/header-minus.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('projetspro')" class="button"><img src="img/header-minus.png" alt="placeholder"></a>
 			</h1>
 			<div class="projetspro">
-				<div class="SAEmenu" id="SAE1012menu">
-					<a class="border" href="javascript:displayProjet('SAE1012')">Implémentation d'un besoin client et comparaison d'approches algorithmiques</a>
-				</div>
-				<div class="SAEmenu" id="SAE203menu">
-					<a class="border" href="javascript:displayProjet('SAE203')">Installation de services réseaux</a>
+				<div class="SAEmenu" id="SAE201256menu">
+					<a class="border" href="javascript:displayProjet('SAE201256')">Développement d'une application lourde</a>
 				</div>
 				<div class="SAEmenu" id="SAE204menu">
 					<a class="border" href="javascript:displayProjet('SAE204')">Exploitation d'une base de données</a>
 				</div>
-				<div class="SAEmenu" id="SAE201256menu">
-					<a class="border" href="javascript:displayProjet('SAE201256')">Développement d'une application lourde</a>
+				<div class="SAEmenu" id="SAE203menu">
+					<a class="border" href="javascript:displayProjet('SAE203')">Installation de services réseaux</a>
 				</div>
+				<div class="SAEmenu" id="SAE1012menu">
+					<a class="border" href="javascript:displayProjet('SAE1012')">Implémentation d'un besoin client et comparaison d'approches algorithmiques</a>
+				</div>
+				
 			</div>
 		</div>
 		<div class="SAE block border" id="SAE1012">
 			<h1>
 				<a href="javascript:showBloc('SAE1012')">Implémentation d'un besoin client et comparaison d'approches algorithmiques</a>
-				<a href="javascript:hideBloc('SAE1012')" class="bouton border"><img src="img/header-x.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('SAE1012')" class="button"><img src="img/header-x.png" alt="placeholder"></a>
 			</h1>
 			<div class="SAEcontent">
 				<div class="SAEtext">
@@ -97,7 +98,7 @@
 		<div class="SAE block border" id="SAE203">
 			<h1>
 				<a href="javascript:showBloc('SAE203')">Installation de services réseau</a>
-				<a href="javascript:hideBloc('SAE203')" class="bouton border"><img src="img/header-x.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('SAE203')" class="button"><img src="img/header-x.png" alt="placeholder"></a>
 			</h1>
 			<div class="SAEcontent">
 				<div class="SAEtext">
@@ -125,7 +126,7 @@
 		<div class="SAE block border" id="SAE204">
 			<h1>
 				<a href="javascript:showBloc('SAE204')">Exploitation d'une base de données</a>
-				<a href="javascript:hideBloc('SAE204')" class="bouton border"><img src="img/header-x.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('SAE204')" class="button"><img src="img/header-x.png" alt="placeholder"></a>
 			</h1>
 			<div class="SAEcontent">
 				<div class="SAEtext">
@@ -158,7 +159,7 @@
 		<div class="SAE block border" id="SAE201256">
 			<h1>
 				<a href="javascript:showBloc('SAE201256')">Développement d'une application lourde</a>
-				<a href="javascript:hideBloc('SAE201256')" class="bouton border"><img src="img/header-x.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('SAE201256')" class="button"><img src="img/header-x.png" alt="placeholder"></a>
 			</h1>
 			<div class="SAEcontent">
 				<div class="SAEtext">
@@ -187,7 +188,7 @@
 		<div id="cv" class="block border">
 			<h1>
 				<a href="javascript:showBloc('cvcontent')">Qui suis-je ?</a>
-				<a href="javascript:hideBloc('cvcontent')" class="bouton border"><img src="img/header-minus.png" alt="placeholder"></a>
+				<a href="javascript:hideBloc('cvcontent')" class="button"><img src="img/header-minus.png" alt="placeholder"></a>
 			</h1>
 			<div id="cvcontent" class="show">
 				<div class="timeline">
@@ -252,13 +253,13 @@
 
 	<footer id="navbar" class="border">
 		<div id="navbarnav">
-			<a href="#presentation" title="Presentation"><img class="border bouton" src="img/people.png" alt="Icone de personnes"></a>
-			<a href="#projetspro" title="Projets professionnels"><img class="border bouton" src="img/explorer.png" alt="Icone de dossiers"></a>
-			<a href="#cv" title="Qui suis-je ?"><img class="border bouton" src="img/cv.png" alt="Icone de feuille"></a>
+			<a href="#presentation" title="Presentation"><img class="button" src="img/people.png" alt="Icone de personnes"></a>
+			<a href="#projetspro" title="Projets professionnels"><img class="button" src="img/explorer.png" alt="Icone de dossiers"></a>
+			<a href="#cv" title="Qui suis-je ?"><img class="button" src="img/cv.png" alt="Icone de feuille"></a>
 		</div>
 		<div id="navbarmoodles">
-			<a href="https://github.com/Elfix3123" title="Mon GitHub" class="border bouton"><img src="img/github.png" alt="Icone de Github"></a>
-			<a href="mailto:martinst@etu.univ-grenoble-alpes.fr" title="Envoyer un mail" class="border bouton"><img src="img/mailto.png" alt="Icone de courriel"></a>
+			<a href="https://github.com/Elfix3123" title="Mon GitHub" class="button"><img src="img/github.png" alt="Icone de Github"></a>
+			<a href="mailto:martinst@etu.univ-grenoble-alpes.fr" title="Envoyer un mail" class="button"><img src="img/mailto.png" alt="Icone de courriel"></a>
 			<span id="currenttime"></span>
 		</div>
 	</footer>
