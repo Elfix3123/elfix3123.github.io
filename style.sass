@@ -185,7 +185,7 @@ main
 
 // Mes projets
 
-.projetspro
+#projetsprocontent
 	display: none
 	flex-flow: row wrap
 
@@ -265,9 +265,12 @@ main
 			
 			.SAEmoodle
 				display: flex
+				flex-flow: row nowrap
 				align-items: center
 				gap: 4px
 				padding: 4px
+				max-width: 32px
+				height: 32px
 
 #SAE1012 .SAEimg
 	background-image: url(img/SAE1012.png)
@@ -294,6 +297,8 @@ main
 #cv #cvcontent
 	display: none
 	margin: 16px
+	align-items: center
+	gap: 16px
 
 	.bio
 		width: 50%
@@ -304,55 +309,18 @@ main
 		gap: 16px
 
 	.timeline
-		width: 25%
-		height: 100%
-		align-self: center
-
-		.date
-			position: relative
-			padding-bottom: 128px
-			width: 100%
-
-			&:last-child
-				padding-bottom: 64px
-
-		.circle
-			display: inline
-			position: absolute
-			font-size: $mediumtext
-			font-weight: bold
-			top: 4px
-			left: 48px
-
-			&::after
-				content: ""
-				position: absolute
-				display: block
-				background-color: $black
-				border-radius: 50%
-				top: -4px
-				left: -48px
-				height: 32px
-				width: 32px
-
-		.line
-			display: inline
-			position: absolute
+		display: flex
+		flex-flow: column nowrap
+		gap: 16px
+		padding: 16px
+		font-size: $mediumtext
+		@extend .border
+		height: fit-content
+			
+		div
+			padding: 16px
 			font-size: $tinytext
-			text-align: justify
-			width: 90%
-			top: 32px
-			left: 48px
-
-			&::after
-				content: ""
-				display: block
-				background-color: $black
-				height: 128px
-				width: 8px
-				position: absolute
-				left: -36px
-				top: -16px
+			@extend .negaborder
 
 	.moodles
 		width: 25%
