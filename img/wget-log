@@ -1,0 +1,6 @@
+--2025-04-18 12:56:09--  https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2F%2Fb3176fe7-89e2-4045-a5f3-e0fb55bc7493/watermark:F/width:360?csig=AAAAAAAAAAAAAAAAAAAAAIQgL8M8CggVh8AgiGQkvrsak3vRRPtTDOGZWCYBUrFp
+Resolving media.canva.com (media.canva.com)... 104.16.103.112, 104.16.102.112, 2606:4700::6810:6670, ...
+Connecting to media.canva.com (media.canva.com)|104.16.103.112|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-18 12:56:09 ERROR 403: Forbidden.
+
