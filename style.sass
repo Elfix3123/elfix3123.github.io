@@ -155,11 +155,12 @@ main
 	display: none
 	justify-content: space-between
 	padding: 32px
+	font-size: $mediumtext
 
 	&.show
 		display: flex
 
-	img
+	img.me
 		max-width: 300px
 		@extend .border
 
@@ -173,14 +174,31 @@ main
 		h2
 			font-size: $title
 
-		ul
+		ul.labels
 			display: flex
 			flex-flow: row wrap
 			gap: 16px
 	
 			li
-				font-size: $mediumtext
 				padding: 8px
+		
+		div.contacts
+			display: flex
+			flex-flow: column nowrap
+			gap: 8px
+
+			.moodle
+				width: fit-content
+				display: flex
+				align-items: center
+				justify-content: space-between
+				gap: 8px
+				padding: 4px
+				height: 32px
+
+			img
+				max-height: 32px
+				max-width: 32px
 
 
 // Mes projets
@@ -210,21 +228,20 @@ main
 		height: 100%
 		object-fit: cover
 
-	#SAE1012menu
-		background-image: url('img/SAE1012.png')
+	#SAE3menu
+		background-image: url('img/SAE3.png')
 		background-size: 100%
 
-	#SAE203menu
-		background-image: url('img/SAE203.png')
+	#SAE4menu
+		background-image: url('img/SAE4.png')
 		background-size: 100%
 
-	#SAE204menu
-		background-image: url('img/SAE204.png')
+	#PRO1menu
+		background-image: url('img/PRO1.png')
 		background-size: 100%
-		background-position: bottom
 
-	#SAE201256menu
-		background-image: url('img/SAE201256.png')
+	#PRO2menu
+		background-image: url('img/PRO2.png')
 		background-size: 100%
 
 .SAE.show
@@ -241,6 +258,9 @@ main
 
 		h2
 			font-size: $hugetext
+
+		h3
+			font-size: $mediumtext
 
 		p
 			font-size: $mediumtext
@@ -280,13 +300,12 @@ main
 	background-image: url(img/SAE4.png)
 	background-size: 100%
 
-#SAE204 .SAEimg
-	background-image: url(img/SAE204.png)
-	background-position: bottom
+#PRO1 .SAEimg
+	background-image: url(img/PRO1.png)
 	background-size: 100%
 
-#SAE201256 .SAEimg
-	background-image: url(img/SAE201256.png)
+#PRO2 .SAEimg
+	background-image: url(img/PRO2.png)
 	background-size: 100%
 
 /* CV */
@@ -299,6 +318,10 @@ main
 	margin: 16px
 	align-items: center
 	gap: 16px
+
+	a
+		color: darkblue
+		text-decoration: underline
 
 	.bio
 		width: 50%

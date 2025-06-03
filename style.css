@@ -42,7 +42,7 @@ main {
   flex-grow: 1;
 }
 
-.border, #cv #cvcontent .timeline, #presentationcontent img, .button {
+.border, #cv #cvcontent .timeline, #presentationcontent img.me, .button {
   border-top: 2px solid #e0e0e0;
   border-left: 2px solid #e0e0e0;
   border-right: 2px solid #606060;
@@ -131,11 +131,12 @@ main {
   display: none;
   justify-content: space-between;
   padding: 32px;
+  font-size: 24px;
 }
 #presentationcontent.show {
   display: flex;
 }
-#presentationcontent img {
+#presentationcontent img.me {
   max-width: 300px;
 }
 #presentationcontent div {
@@ -148,14 +149,32 @@ main {
 #presentationcontent div h2 {
   font-size: 64px;
 }
-#presentationcontent div ul {
+#presentationcontent div ul.labels {
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
 }
-#presentationcontent div ul li {
-  font-size: 24px;
+#presentationcontent div ul.labels li {
   padding: 8px;
+}
+#presentationcontent div div.contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+#presentationcontent div div.contacts .moodle {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px;
+  height: 32px;
+}
+#presentationcontent div div.contacts img {
+  max-height: 32px;
+  max-width: 32px;
 }
 
 #projetsprocontent {
@@ -183,21 +202,20 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#projetsprocontent #SAE1012menu {
-  background-image: url("img/SAE1012.png");
+#projetsprocontent #SAE3menu {
+  background-image: url("img/SAE3.png");
   background-size: 100%;
 }
-#projetsprocontent #SAE203menu {
-  background-image: url("img/SAE203.png");
+#projetsprocontent #SAE4menu {
+  background-image: url("img/SAE4.png");
   background-size: 100%;
 }
-#projetsprocontent #SAE204menu {
-  background-image: url("img/SAE204.png");
+#projetsprocontent #PRO1menu {
+  background-image: url("img/PRO1.png");
   background-size: 100%;
-  background-position: bottom;
 }
-#projetsprocontent #SAE201256menu {
-  background-image: url("img/SAE201256.png");
+#projetsprocontent #PRO2menu {
+  background-image: url("img/PRO2.png");
   background-size: 100%;
 }
 
@@ -216,6 +234,9 @@ main {
 }
 .SAE .SAEtext h2 {
   font-size: 32px;
+}
+.SAE .SAEtext h3 {
+  font-size: 24px;
 }
 .SAE .SAEtext p {
   font-size: 24px;
@@ -258,14 +279,13 @@ main {
   background-size: 100%;
 }
 
-#SAE204 .SAEimg {
-  background-image: url(img/SAE204.png);
-  background-position: bottom;
+#PRO1 .SAEimg {
+  background-image: url(img/PRO1.png);
   background-size: 100%;
 }
 
-#SAE201256 .SAEimg {
-  background-image: url(img/SAE201256.png);
+#PRO2 .SAEimg {
+  background-image: url(img/PRO2.png);
   background-size: 100%;
 }
 
@@ -279,6 +299,10 @@ main {
   margin: 16px;
   align-items: center;
   gap: 16px;
+}
+#cv #cvcontent a {
+  color: darkblue;
+  text-decoration: underline;
 }
 #cv #cvcontent .bio {
   width: 50%;
